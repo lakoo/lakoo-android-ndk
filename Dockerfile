@@ -15,7 +15,7 @@ RUN wget -q --output-document=android-sdk.tgz https://dl.google.com/android/andr
 	tar --no-same-owner -xzf android-sdk.tgz && \
 	rm -f android-sdk.tgz && \
 	echo y | android update sdk -u -a -t platform-tools && \
-	echo y | android update sdk -u -a -t build-tools-25.0.2,android-25 && \
+	echo y | android update sdk -u -a -t build-tools-25.0.3,android-25 && \
 	echo y | android update sdk -u -a -t extra-android-m2repository,extra-google-m2repository,extra-google-google_play_services
 RUN wget -q --output-document=android-ndk.zip https://dl.google.com/android/repository/android-ndk-r14b-linux-x86_64.zip && \
 	unzip android-ndk.zip && \
