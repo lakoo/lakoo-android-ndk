@@ -18,7 +18,7 @@ RUN cd /opt/android-sdk-linux && \
 	rm -f sdk-tools.zip && \
 	echo y | sdkmanager "build-tools;25.0.3" "platforms;android-25" && \
 	echo y | sdkmanager "extras;android;m2repository" "extras;google;m2repository" "extras;google;google_play_services"
-RUN wget -q --output-document=android-ndk.zip https://dl.google.com/android/repository/android-ndk-r14b-linux-x86_64.zip && \
+RUN wget -q --output-document=android-ndk.zip https://dl.google.com/android/repository/android-ndk-r15-linux-x86_64.zip && \
 	unzip android-ndk.zip && \
 	rm -f android-ndk.zip && \
-	mv android-ndk-r14b android-ndk-linux
+	mv android-ndk-r15 android-ndk-linux
