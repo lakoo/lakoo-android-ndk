@@ -16,7 +16,7 @@ RUN cd /opt/android-sdk-linux && \
 	wget -q --output-document=sdk-tools.zip https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip && \
 	unzip sdk-tools.zip && \
 	rm -f sdk-tools.zip && \
-	echo y | sdkmanager "build-tools;25.0.3" "platforms;android-25" && \
+	echo y | sdkmanager "build-tools;26.0.0" "platforms;android-25" && \
 	echo y | sdkmanager "extras;android;m2repository" "extras;google;m2repository" "extras;google;google_play_services"
 RUN wget -q --output-document=android-ndk.zip https://dl.google.com/android/repository/android-ndk-r15-linux-x86_64.zip && \
 	unzip android-ndk.zip && \
