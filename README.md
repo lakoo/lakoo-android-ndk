@@ -13,3 +13,4 @@ Base on https://hub.docker.com/_/openjdk/ , image `openjdk:8u121-jdk`
 * extra-google-m2repository
 * extra-google-google_play_services
 * android-ndk-r15
+* cmake 3.6.4111459
