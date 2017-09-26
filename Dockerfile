@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk
+FROM openjdk:9-jdk
 MAINTAINER William Chong <williamchong@lakoo.com>
 
 RUN mkdir -p /opt/android-sdk-linux && mkdir -p ~/.android && touch ~/.android/repositories.cfg
@@ -8,6 +8,7 @@ ENV ANDROID_HOME /opt/android-sdk-linux
 ENV PATH ${PATH}:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platform-tools:${PATH}:${ANDROID_HOME}/tools
 ENV ANDROID_NDK /opt/android-ndk-linux
 ENV ANDROID_NDK_HOME /opt/android-ndk-linux
+ENV SDKMANAGER_OPTS "--add-modules java.se.ee"
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
 	unzip \
