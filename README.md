@@ -9,7 +9,7 @@ Base on https://hub.docker.com/_/openjdk/ , image `openjdk:8-jdk`
 * android sdk-tools-linux-3859397
 * android platform-tools
 * android build-tools-28.0.2
-* android sdk android-26
+* android sdk android-28
 * extra-android-m2repository
 * extra-google-m2repository
 * extra-google-google_play_services
