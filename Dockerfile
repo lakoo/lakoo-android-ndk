@@ -19,7 +19,7 @@ RUN cd /opt/android-sdk-linux && \
 	echo y | sdkmanager "build-tools;27.0.3" "platforms;android-26" && \
 	echo y | sdkmanager "extras;android;m2repository" "extras;google;m2repository" "extras;google;google_play_services" && \
 	sdkmanager "cmake;3.6.4111459"
-RUN wget -q --output-document=android-ndk.zip https://dl.google.com/android/repository/android-ndk-r17-linux-x86_64.zip && \
+RUN wget -q --output-document=android-ndk.zip https://dl.google.com/android/repository/android-ndk-r17b-linux-x86_64.zip && \
 	unzip android-ndk.zip && \
 	rm -f android-ndk.zip && \
-	mv android-ndk-r17 android-ndk-linux
+	mv android-ndk-r17b android-ndk-linux
