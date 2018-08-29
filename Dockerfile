@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 	unzip \
 	wget
 RUN cd /opt/android-sdk-linux && \
-	wget -q --output-document=sdk-tools.zip https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip && \
+	wget -q --output-document=sdk-tools.zip https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip && \
 	unzip sdk-tools.zip && \
 	rm -f sdk-tools.zip && \
 	echo y | sdkmanager "build-tools;28.0.2" "platforms;android-28" && \
